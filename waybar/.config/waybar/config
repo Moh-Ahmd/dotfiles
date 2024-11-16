@@ -1,0 +1,67 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "margin-top": 15,
+    "modules-left": ["battery", "pulseaudio", "disk", "memory"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["network", "clock"],
+
+    "battery": {
+        "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span size='13000' foreground='#83a598'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#83a598'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#83a598'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#83a598'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#83a598'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#83a598'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#83a598'> </span>{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "{time}"
+    },
+    "clock": {
+        "format": "<span foreground='#282828'>   </span>{:%a %d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-muted": "",
+      "format-icons": {
+          "default": ["", "", " "]
+      },
+      "on-click": "pavucontrol"
+    },
+    "network": {
+    "format-wifi": "<span size='13000' foreground='#d3869b'>  </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#d3869b'>󰤭  </span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000' foreground='#d3869b'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+    },
+    "disk": {
+        "interval": 1,
+        "format": "  {specific_free:0.2f} GB/{specific_total:0.2f} GB",
+        "unit": "GB"
+    },
+    "memory": {
+        "interval": 1,
+        "format": "󰍛  {used:0.1f}G/{total:0.1f}G"
+    },
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": [],
+        },
+    },
+}
