@@ -1,0 +1,53 @@
+# [general]
+# import = [
+#   "~/.config/alacritty/themes/themes/flexoki.toml"
+# ]
+# [window]
+# decorations = "Buttonless"
+# opacity = 0.8
+# blur = true
+# padding.x = 10
+# padding.y = 10
+#
+# [font]
+# normal = {family = "MesloLGS NF", style = "Regular"}
+# bold = {family = "MesloLGS NF", style = "Bold"}
+# italic = {family = "MesloLGS NF", style = "Italic"}
+# bold_italic = {family = "MesloLGS NF", style = "Bold Italic"}
+# builtin_box_drawing = true
+#
+# size = 14 
+#
+# # [colors.normal]
+# #
+# # green = "#957FB8"
+# #
+# # [colors.bright]
+# #
+# # green = "#938AA9"
+
+
+[general]
+import = ["/home/mohmak07/.config/alacritty/colors.toml", "/home/mohmak07/.config/alacritty/fonts.toml"]
+live_config_reload = true
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+dynamic_title = true
+
+[window.dimensions]
+columns = 115
+lines = 20
+
+[window.padding]
+x = 25
+y = 25
