@@ -65,3 +65,11 @@ eval "$(fzf --zsh)"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+
+# man to nvim
+export MANPAGER="nvim +Man!"
+# Function to open info pages in Neovim
+function info() {
+    command info "$@" --subnodes -o - | nvim -R -c 'set ft=info' -
+}
