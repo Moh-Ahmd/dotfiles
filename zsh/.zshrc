@@ -73,3 +73,15 @@ export MANPAGER="nvim +Man!"
 function info() {
     command info "$@" --subnodes -o - | nvim -R -c 'set ft=info' -
 }
+
+
+
+export LIBTORCH=/opt/libtorch
+export LD_LIBRARY_PATH=${LIBTORCH}/lib:$LD_LIBRARY_PATH
+
+
+
+export CATALINA_HOME=~/tomcat/apache-tomcat-8.5.9
+export CATALINA_BASE=~/tomcat/apache-tomcat-8.5.9
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+export PATH=$PATH:$CATALINA_HOME/bin
