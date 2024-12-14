@@ -7,8 +7,8 @@ return {
         -- Enable the formatters you want
         conform.formatters = {
             python = { "black", "isort" },
-            c = { "clang_format" },
-            cpp = { "clang_format" },
+            c = { "clang-format" },
+            cpp = { "clang-format" },
         }
 
         -- Keybindings for formatting

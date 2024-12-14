@@ -6,8 +6,6 @@ return {
 
         lint.linters_by_ft = {
             python = { "flake8", "mypy", "pylint" },
-            c = { "gcc" },  -- Assuming gcc is installed for linting
-            cpp = { "gcc" },
         }
 
         -- Run linter on file save
