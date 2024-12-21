@@ -54,7 +54,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
+# bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -198,7 +199,7 @@ bar {
 }
 
 bindsym $mod+shift+x exec i3lock
-exec_always feh --bg-scale "/home/mohmak07/Downloads/WhatsApp Image 2024-07-07 at 10.24.53.jpeg"
+exec_always feh --bg-scale "/home/mohmak07/Downloads/wallpapers/gruvbox_image40.png"
 
 
 # Assign Programs to workspaces
