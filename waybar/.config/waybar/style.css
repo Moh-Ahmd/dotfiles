@@ -23,15 +23,17 @@ window#waybar {
 .modules-left {
     padding-left: 20px;
     padding-right: 20px;
+    background-color: transparent; /* Set background to transparent */
 }
 
 .modules-right {
     padding-right: 20px;
     padding-left: 20px;
+    background-color: transparent; /* Set background to transparent */
 }
 
 .modules-center {
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
 }
 
 #battery {
@@ -39,21 +41,21 @@ window#waybar {
     padding-left: 4px;
     margin-right: 15px;
     color: #9ece6a; /* Tokyo Night green */
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
 }
 
 #clock {
     padding-right: 20px;
     padding-left: 20px;
     margin-left: 15px;
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
     color: #e0af68; /* Tokyo Night yellow */
 }
 
 #network {
     padding-right: 20px;
     padding-left: 20px;
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
     color: #bb9af7; /* Tokyo Night magenta */
 }
 
@@ -61,7 +63,7 @@ window#waybar {
     padding-right: 4px;
     padding-left: 4px;
     margin-right: 15px;
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
     color: #e0af68; /* Tokyo Night yellow */
 }
 
@@ -69,7 +71,7 @@ window#waybar {
     padding-right: 4px;
     padding-left: 4px;
     margin-right: 15px;
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
     color: #9ece6a; /* Tokyo Night green */
 }
 
@@ -77,13 +79,13 @@ window#waybar {
     padding-right: 4px;
     padding-left: 4px;
     margin-right: 15px;
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
     color: #bb9af7; /* Tokyo Night magenta */
 }
 
 #backlight {
     padding-right: 20px;
     padding-left: 20px;
-    background-color: #1a1b26; /* Tokyo Night background */
+    background-color: transparent; /* Set background to transparent */
     color: #fab387; /* Tokyo Night peach */
 }
