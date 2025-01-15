@@ -1,30 +1,60 @@
-# Colors (Gruvbox dark)
+# # Colors (Gruvbox dark)
+#
+# # Default colors
+# [colors.primary]
+# # hard contrast background = = '#1d2021'
+# background = '#282828'
+# # soft contrast background = = '#32302f'
+# foreground = '#ebdbb2'
+#
+# # Normal colors
+# [colors.normal]
+# black   = '#282828'
+# red     = '#cc241d'
+# green   = '#98971a'
+# yellow  = '#d79921'
+# blue    = '#458588'
+# magenta = '#b16286'
+# cyan    = '#689d6a'
+# white   = '#a89984'
+#
+# # Bright colors
+# [colors.bright]
+# black   = '#928374'
+# red     = '#fb4934'
+# green   = '#b8bb26'
+# yellow  = '#fabd2f'
+# blue    = '#83a598'
+# magenta = '#d3869b'
+# cyan    = '#8ec07c'
+# white   = '#ebdbb2'
+
+
+# Colors (Tokyo Night Night)
 
 # Default colors
 [colors.primary]
-# hard contrast background = = '#1d2021'
-background = '#282828'
-# soft contrast background = = '#32302f'
-foreground = '#ebdbb2'
+background = '#1a1b26'  # Tokyo Night Night background
+foreground = '#c0caf5'  # Tokyo Night Night foreground
 
 # Normal colors
 [colors.normal]
-black   = '#282828'
-red     = '#cc241d'
-green   = '#98971a'
-yellow  = '#d79921'
-blue    = '#458588'
-magenta = '#b16286'
-cyan    = '#689d6a'
-white   = '#a89984'
+black   = '#15161e'  # Tokyo Night Night black
+red     = '#f7768e'  # Tokyo Night Night red
+green   = '#9ece6a'  # Tokyo Night Night green
+yellow  = '#e0af68'  # Tokyo Night Night yellow
+blue    = '#7aa2f7'  # Tokyo Night Night blue
+magenta = '#bb9af7'  # Tokyo Night Night magenta
+cyan    = '#7dcfff'  # Tokyo Night Night cyan
+white   = '#a9b1d6'  # Tokyo Night Night white
 
 # Bright colors
 [colors.bright]
-black   = '#928374'
-red     = '#fb4934'
-green   = '#b8bb26'
-yellow  = '#fabd2f'
-blue    = '#83a598'
-magenta = '#d3869b'
-cyan    = '#8ec07c'
-white   = '#ebdbb2'
+black   = '#414868'  # Tokyo Night Night bright black
+red     = '#f7768e'  # Tokyo Night Night bright red
+green   = '#9ece6a'  # Tokyo Night Night bright green
+yellow  = '#e0af68'  # Tokyo Night Night bright yellow
+blue    = '#7aa2f7'  # Tokyo Night Night bright blue
+magenta = '#bb9af7'  # Tokyo Night Night bright magenta
+cyan    = '#7dcfff'  # Tokyo Night Night bright cyan
+white   = '#c0caf5'  # Tokyo Night Night bright white

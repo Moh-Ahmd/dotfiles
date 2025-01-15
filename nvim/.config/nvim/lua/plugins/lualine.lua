@@ -1,11 +1,23 @@
-return {
+-- return {
+--
+--   "nvim-lualine/lualine.nvim",
+--   config = function()
+--     require('lualine').setup({
+--       options = {
+--         theme = "palenight"
+--       }
+--     })
+--   end
+-- }
 
-  "nvim-lualine/lualine.nvim",
+return {
+  'nvim-lualine/lualine.nvim',
+  dependencies = { 'folke/tokyonight.nvim' },
   config = function()
     require('lualine').setup({
       options = {
-        theme = "gruvbox_dark"
-      }
+        theme = 'tokyonight-night', 
+      },
     })
   end
 }
