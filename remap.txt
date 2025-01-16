@@ -1,0 +1,87 @@
+# Remapping CapsLock to ESC (tap) and CTRL (hold) in Linux/Hyprland
+
+This guide explains how to remap the CapsLock key to function as:
+- ESC when tapped once
+- CTRL when held down
+
+## Prerequisites
+- Linux system with systemd
+- Hyprland or other Wayland compositor
+- sudo privileges
+
+## Installation Steps
+
+1. Install required packages:
+```bash
+# For Arch-based distributions:
+sudo pacman -S interception-tools interception-caps2esc
+
+# For Debian/Ubuntu-based distributions:
+sudo apt install interception-tools interception-caps2esc
+```
+
+2. Create the configuration directory and file:
+```bash
+sudo mkdir -p /etc/interception/udevmon.d
+sudo nano /etc/interception/udevmon.yaml
+```
+
+3. Add this configuration to udevmon.yaml:
+```yaml
+- JOB: "intercept -g $DEVNODE | caps2esc | uinput -d $DEVNODE"
+  DEVICE:
+    EVENTS:
+      EV_KEY: [KEY_CAPSLOCK]
+```
+
+4. Create the systemd service file:
+```bash
+sudo nano /etc/systemd/system/udevmon.service
+```
+
+5. Add this content to udevmon.service:
+```ini
+[Unit]
+Description=udevmon
+After=systemd-user-sessions.service
+
+[Service]
+ExecStart=/usr/bin/nice -n -20 /usr/bin/udevmon -c /etc/interception/udevmon.yaml
+Nice=-20
+Restart=on-failure
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
+```
+
+6. Enable and start the service:
+```bash
+sudo systemctl enable --now udevmon
+sudo systemctl start udevmon
+```
+
+## Optional: Customize Timing Parameters
+
+If you want to adjust the timing behavior:
+
+1. Create a custom configuration file:
+```bash
+sudo nano /etc/interception/caps2esc.yaml
+```
+
+2. Add these parameters (adjust values as needed):
+```yaml
+timeout: 200     # Timeout in milliseconds
+delay: 0         # Delay in milliseconds
+```
+
+## Testing
+- Open a terminal or text editor
+- Tap CapsLock briefly -> Should produce ESC
+- Hold CapsLock and press another key -> Should work as CTRL + that key
+
+## Notes
+- Configuration persists between sessions and system reboots
+- The service starts automatically at boot
+- No need for X11 utilities like xmodmap or xcape
