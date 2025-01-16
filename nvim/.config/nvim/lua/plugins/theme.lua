@@ -1,18 +1,10 @@
--- return {
---   'morhetz/gruvbox', 
---   lazy = false,
---   priority = 1000,
---   config = function()
---     vim.cmd.colorscheme('gruvbox')
---   end
--- }
 return {
-    'folke/tokyonight.nvim',
+    'rebelot/kanagawa.nvim',
     lazy = false,
     priority = 1000,
     config = function()
         -- Configure the colorscheme before loading it
-        require("tokyonight").setup({
+        require("kanagawa").setup({
             on_highlights = function(hl, c)
                 -- Custom highlights that will persist
                 hl.CursorLineNr = {
@@ -23,7 +15,7 @@ return {
         })
 
         -- Set the colorscheme
-        vim.cmd.colorscheme('tokyonight-night')
+        vim.cmd.colorscheme('kanagawa-wave')
 
         -- Ensure relative line numbers are enabled
         vim.opt.number = true

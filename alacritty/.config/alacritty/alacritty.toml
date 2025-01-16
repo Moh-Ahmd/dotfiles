@@ -28,7 +28,7 @@
 
 
 [general]
-import = ["/home/mohmak07/.config/alacritty/colors.toml", "/home/mohmak07/.config/alacritty/fonts.toml"]
+import = ["~/.config/alacritty/themes/themes/kanagawa_wave.toml", "~/.config/alacritty/fonts.toml"]
 live_config_reload = true
 
 [cursor]
