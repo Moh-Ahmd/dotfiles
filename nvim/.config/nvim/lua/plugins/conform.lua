@@ -6,7 +6,7 @@ return {
         
         conform.setup({
             formatters_by_ft = {
-                python = { "black", "isort" },
+                python = { "Black" , "isort"},
                 c = { "clang-format" },
                 cpp = { "clang-format" },
                 cmake = { "cmake-format" },
