@@ -45,3 +45,12 @@ vim.cmd("set clipboard+=unnamedplus")
 -- latex key-bindings
 vim.keymap.set('n', '<leader>ll', ':VimtexCompile<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>lv', ':VimtexView<CR>', { noremap = true, silent = true })
+
+
+vim.cmd([[
+  highlight Normal guibg=NONE ctermbg=NONE
+  highlight NonText guibg=NONE ctermbg=NONE
+  highlight LineNr guibg=NONE ctermbg=NONE
+  highlight Folded guibg=NONE ctermbg=NONE
+  highlight EndOfBuffer guibg=NONE ctermbg=NONE
+]])

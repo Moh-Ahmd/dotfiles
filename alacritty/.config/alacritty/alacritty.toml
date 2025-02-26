@@ -43,6 +43,7 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [window]
 dynamic_title = true
+opacity = 0.5
 
 [window.dimensions]
 columns = 115

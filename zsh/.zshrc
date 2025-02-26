@@ -86,5 +86,6 @@ export CATALINA_BASE=~/tomcat/apache-tomcat-8.5.9
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$PATH:$CATALINA_HOME/bin
 
+# export PATH="$HOME/.config/emacs/bin:$PATH"
 
-export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH=$PATH:~/.local/bin
