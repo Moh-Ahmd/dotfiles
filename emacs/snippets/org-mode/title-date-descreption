@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Title, Date, Description
+# key: tdd
+# --
+#+TITLE: $1
+#+DATE: `(format-time-string "%Y-%m-%d")`
+#+DESCRIPTION: $2
+$0
